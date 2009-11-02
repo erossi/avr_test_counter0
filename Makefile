@@ -24,6 +24,10 @@ test_1:
 	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_1.c $(LFLAGS)
 	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
 
+test_2:
+	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_2.c $(LFLAGS)
+	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
+
 program:
 	$(DUDE)
 
