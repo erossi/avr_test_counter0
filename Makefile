@@ -28,6 +28,18 @@ test_2:
 	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_2.c $(LFLAGS)
 	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
 
+test_3:
+	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_3.c $(LFLAGS)
+	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
+
+test_4:
+	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_4.c $(LFLAGS)
+	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
+
+test_5:
+	$(CC) $(CFLAGS) -o $(PRGNAME).elf test_5.c $(LFLAGS)
+	$(OBJCOPY) $(PRGNAME).elf $(PRGNAME).hex
+
 program:
 	$(DUDE)
 
